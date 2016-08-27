@@ -11,20 +11,34 @@
 		<script src="js/tether.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/trianglify.min.js"></script>
+		<script src="js/trianglify.colors.js"></script>
 	</head>
 	<body>
 		<canvas id="background"></canvas>
 		<div class="container">
-			<div class="jumbotron glassish text-xs-center">
+			<div id="ctaJumbo" class="jumbotron glassish text-xs-center">
 				<h1 class="display-3">Hi</h1>
 				<p class="lead">We are Bundled Sticks</p>
 				<hr class="m-y-2" />
 				<p>Take a look at what we have created so far.</p>
 				<p class="lead">
-					<a class="btn btn-github bnt-lg" href="https://github.com/BundledSticksInkorperated"><i class="fa fa-github"></i> Github</a>
+					<a class="btn btn-github bnt-lg" target="_blank" href="https://github.com/BundledSticksInkorperated"><i class="fa fa-github"></i> Github</a>
 				</p>
 			</div>
-
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card glassish">
+						<h2 class="card-header text-md-center">Projects</h2>
+						<div class="card-block">
+							<div class="card card-block">
+								<h2 class="card-title">Discore</h2>
+								<p class="card-text">A .Net Core Library for the Discord API</p>
+								<a class="btn btn-info" href="/Discore/">More info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="card glassish">
@@ -50,12 +64,37 @@
 				</div>
 			</div>
 			<script>
-				var pattern = Trianglify({
-					width: window.innerWidth,
-					height: window.innerHeight,
-					variance: "0.2"
+				var GenBackground = function() {
+
+					var atcJumbo = document.getElementById('ctaJumbo');
+
+					var atcJumboPattern = Trianglify({
+						width: atcJumbo.offsetWidth,
+						height: atcJumbo.offsetHeight,
+						color_function: TrianglifyColors.prototype.RainbowColorFunction,
+						cell_size: 60,
+						variance: "0.2"
+					});
+					atcJumbo.setAttribute('style', 'background: url(' + atcJumboPattern.png() + ')');
+
+					var pattern = Trianglify({
+						width: window.innerWidth,
+						height: window.innerHeight,
+						x_colors: TrianglifyColors.PrincessToQueen,
+						//y_colors: TrianglifyColors.CrashingOceanWaves,
+						cell_size: 120,
+						variance: "1"
+					});
+					pattern.canvas(document.getElementById('background'));
+				}
+
+				var doit;
+				window.addEventListener('resize', function(){
+					clearTimeout(doit);
+					doit = setTimeout(function() { GenBackground(); }, 100);
 				});
-				pattern.canvas(document.getElementById('background'));
+
+				GenBackground();
 		</script>
 	</body>
 </html>

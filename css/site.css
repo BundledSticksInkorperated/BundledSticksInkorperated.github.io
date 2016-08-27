@@ -2,6 +2,10 @@ body {
 	padding-top: 5rem;
 }
 
+.img-circle {
+	width: 240px; /*odd bug with sizing; workaround*/
+}
+
 .glassish {
 	background: rgba(236, 238, 239, 0.8);
 }

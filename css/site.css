@@ -12,22 +12,23 @@ body {
 }
 
 .btn {
-	transition: background-color .5s, border-color .5s;
+	transition: background-color .5s, border-color .5s, color 1s;
 }
 
 .btn-github,
 .btn-github:visited,
 .btn-github:link,
 .btn-github:active {
-	color: #fff;
-	background-color: #4078c0;
-	border-color: #4078c0;
+	color: black;
+	background-color: rgba(236, 238, 239, 0.8);
+	border-color: #fff;
 	text-decoration: none;
 }
 
 .btn-github:hover {
-	background-color: #3f5fbf;
-	border-color: #3f5fbf;
+	color: #fff;
+	background-color: #4078c0;
+	border-color: #4078c0;
 }
 
 #background {

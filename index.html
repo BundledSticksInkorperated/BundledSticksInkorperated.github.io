@@ -10,9 +10,10 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/tether.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/trianglify.min.js"></script>
 	</head>
 	<body>
-
+		<canvas id="background"></canvas>
 		<div class="container">
 			<div class="jumbotron glassish text-xs-center">
 				<h1 class="display-3">Hi</h1>
@@ -48,5 +49,13 @@
 					</div>
 				</div>
 			</div>
+			<script>
+				var pattern = Trianglify({
+					width: window.innerWidth,
+					height: window.innerHeight,
+					variance: "0.2"
+				});
+				pattern.canvas(document.getElementById('background'));
+		</script>
 	</body>
 </html>

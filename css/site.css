@@ -1,45 +1,23 @@
+/*
+ * General stuff for the site
+ */
+
 body {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 	background: grey;
 }
 
-.img-circle {
-	width: 240px; /*odd bug with sizing; workaround*/
-}
+.footer {
+	background-color: #f8f9fa;
+  }
 
-.glassish {
-	background: rgba(236, 238, 239, 0.8);
-}
-
-.btn {
-	transition: background-color .5s, border-color .5s, color 1s;
-}
-
-.btn-github,
-.btn-github:visited,
-.btn-github:link,
-.btn-github:active {
-	color: black;
-	background-color: rgba(236, 238, 239, 0.8);
-	border-color: #fff;
-	text-decoration: none;
-}
-
-.btn-github:hover {
-	color: #fff;
-	background-color: #4078c0;
-	border-color: #4078c0;
-}
-
-#background {
-	z-index: -999;
+#prideBackgroundTarget {
+	z-index: -9999;
 	position: fixed;
-	top: 0px;
-	left: 0px;
-	min-width: 100%;
-	min-height: 100%;
-	transition: background 2s;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgb(53, 53, 53);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;

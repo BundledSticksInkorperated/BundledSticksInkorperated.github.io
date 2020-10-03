@@ -1,0 +1,21 @@
+/*
+ * Extensions for Bootstrap v4.4 cards
+ * "Zoom-in" effect for cards with image overlays and streched links
+ */
+
+.card-button > .card-img,
+.card-button .card-title,
+.card-button .card-subtitle {
+    -moz-transition:all .3s;
+    -webkit-transition:all .3s;
+    transition:all .3s
+}
+.card-button:hover > .card-img {
+    -moz-transform:scale(1.02);
+    -webkit-transform:scale(1.02);
+    transform:scale(1.02)
+}
+.card-button:hover .card-title,
+.card-button:hover .card-subtitle {
+    color: #dfdfdf;
+}

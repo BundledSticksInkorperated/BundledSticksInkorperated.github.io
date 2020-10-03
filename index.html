@@ -1,100 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 	<head>
 		<title>Bundled Sticks Inkorperated</title>
 		<link rel="icon" type="image/png" href="favicon.png" />
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/tether.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/site.css" />
-		<script src="https://use.fontawesome.com/21c1db06e1.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/tether.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/trianglify.min.js"></script>
-		<script src="js/trianglify.colors.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/site.css" />
+		<link rel="stylesheet" href="css/btn.css" />
+		<link rel="stylesheet" href="css/btn-github.css" />
+		<link rel="stylesheet" href="css/card-button.css" />
+		<link rel="stylesheet" href="css/card-background.css" />
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script>
+		<script src="https://kit.fontawesome.com/fba93c3043.js" crossorigin="anonymous"></script>
 	</head>
-	<body>
-		<canvas id="background"></canvas>
-		<div class="container">
-			<div id="ctaJumbo" class="jumbotron glassish text-xs-center">
+	<body class="h-100">
+		<div id="prideBackgroundTarget" class="h-100"></div>
+
+		<div class="h-100 text-center d-flex align-items-center">
+			<div class="container bg-transparent">
 				<h1 class="display-3">Hi</h1>
-				<p class="lead">We are Bundled Sticks</p>
-				<hr class="m-y-2" />
-				<p>Take a look at what we have created so far.</p>
-				<p class="lead">
-					<a class="btn btn-github" href="https://github.com/BundledSticksInkorperated"><i class="fa fa-github"></i> Github</a>
-				</p>
+				<p class="lead">We are <a href="https://github.com/BundledSticksInkorperated">Bundled Sticks</a></p>
+				<hr class="m-y-2 shadow" />
 			</div>
-			<div class="row">
+		</div>
+
+		<div class="container shadow my-5 py-2 bg-light">
+			<div class="text-center">
+				<h2 class="display-4">Projects</h2>
+				<h6 class="lead text-muted">Stuff we have worked on</h6>
+			</div>
+			<hr class="m-y-2 shadow" />
+			<div class="row my-3">
 				<div class="col-md-12">
-					<div class="card glassish">
-						<h2 class="card-header text-md-center">Projects</h2>
-						<div class="card-block">
-							<div class="card card-block">
-								<h2 class="card-title">Discore</h2>
-								<p class="card-text">A .NET Standard interface for the Discord API designed for creating bots.</p>
-								<a class="btn btn-info" href="https://github.com/BundledSticksInkorperated/Discore"><i class="fa fa-github"></i> More Info</a>
+					<div class="card shadow card-button text-center text-white">
+						<img class="card-img" src="https://francessco.us/images/projects/discore/banner.png" alt="discore-gfx">
+						<div class="card-img-overlay">
+							<h2 class="card-title">Discore</h2>
+							<h5 class="card-subtitle">A .NET Standard interface for the Discord API designed for creating bots.</h5>
+							<a class="stretched-link" href="https://github.com/BundledSticksInkorperated/Discore"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container shadow my-5 py-2 bg-light">
+			<div class="text-center">
+				<h2 class="display-4">Creators</h2>
+				<h6 class="lead text-muted">The sticks</h6>
+			</div>
+			<hr class="m-y-2 shadow" />
+			<div class="row my-3">
+				<div class="col-md-6">
+					<div class="card shadow text-center mb-3">
+						<div id="francesscoFlag" class="row no-gutters">
+							<div class="col-4">
+								<img class="card-img" src="https://github.com/Francessco121.png?size=240" alt="Francessco Github Image">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h2 class="card-title">Francessco</h2>
+									<hr class="m-y-2 shadow" />
+									<a class="card-link" href="https://francessco.us/">Website</a>
+									<a class="card-link" href="https://github.com/Francessco121"><i class="fab fa-github"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card card-background shadow text-center mb-3">
+						<div id="shortcordFlag" class="row no-gutters">
+							<div class="col-4">
+								<img class="card-img" src="https://github.com/teh-random-name.png?size=240" alt="ShortCord Github Image">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h2 class="card-title">Short Cord</h2>
+									<hr class="m-y-2 shadow" />
+									<a class="card-link" href="https://shortcord.com/">Website</a>
+									<a class="card-link" href="https://github.com/teh-random-name"><i class="fab fa-github"></i></a>
+									<a class="card-link" href="https://gitlab.shortcord.com/shortcord"><i class="fab fa-gitlab"></i></a>
+									<a class="card-link" href="https://twitter.com/short_cord"><i class="fab fa-twitter"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="card glassish">
-						<h2 class="card-header text-md-center">Francessco</h2>
-						<div class="card-block">
-							<img class="m-x-auto d-block img-circle" src="https://github.com/Francessco121.png?size=240" alt="Francessco Github Image" />
-						</div>
-						<div class="card-footer">
-							<p class="text-xs-center"><a class="btn btn-info" href="https://francessco.us/">More Info</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card glassish">
-						<h2 class="card-header text-md-center">Short Cord</h2>
-						<div class="card-block">
-							<img class="m-x-auto d-block img-circle" src="https://github.com/teh-random-name.png?size=240" alt="ShortCord Github Image" />
-						</div>
-						<div class="card-footer">
-							<p class="text-xs-center"><a class="btn btn-info" href="https://Shortcord.com/">More Info</a></p>
-						</div>
-					</div>
-				</div>
+		</div>
+
+		<div class="footer mt-auto py-3">
+			<div class="container text-center">
+				<span class="text-muted">Copyright 2020 Bundled Sticks Ink | <a href="https://github.com/BundledSticksInkorperated/BundledSticksInkorperated.github.io">Source</a></span>
 			</div>
+		</div>
 			<script>
-				var GenBackground = function() {
+				const prideColors = ["#F76852", "#EBB257", "#CFFC8B", "#87DFFF", "#BE8AFF"];
+				const qbitColors = ["#000000", "#9254F7", "#FFFFFF", "#F7E754"];
 
-					var atcJumbo = document.getElementById('ctaJumbo');
-
-					var atcJumboPattern = Trianglify({
-						width: atcJumbo.offsetWidth,
-						height: atcJumbo.offsetHeight,
-						color_function: TrianglifyColors.prototype.RainbowColorFunction,
-						cell_size: 60,
-						variance: "0.2"
-					});
-					atcJumbo.setAttribute('style', 'background: url(' + atcJumboPattern.png() + ')');
-
-					var pattern = Trianglify({
-						width: window.innerWidth,
-						height: window.innerHeight,
-						x_colors: TrianglifyColors.PrincessToQueen,
-						//y_colors: TrianglifyColors.CrashingOceanWaves,
-						cell_size: 120,
-						variance: "1"
-					});
-					pattern.canvas(document.getElementById('background'));
+				const SetBackgroundOnElement = function (element, svgTree)
+				{
+					let base64SvgTree = window.btoa(svgTree);
+					element.style.background = `url('data:image/svg+xml;base64,${base64SvgTree}'`;
 				}
 
-				var doit;
-				window.addEventListener('resize', function(){
-					clearTimeout(doit);
-					doit = setTimeout(function() { GenBackground(); }, 100);
-				});
+				const GenPattern = function(element, colors, width, height, cellSize, variance) {
 
-				GenBackground();
+					var element = document.getElementById(element);
+					let pattern = trianglify({
+						width: width ? width : element.offsetWidth,
+						height: height ? height : element.offsetHeight,
+						cellSize: cellSize ? cellSize : 60,
+						variance: variance ? variance : 0.75,
+						xColors: colors
+					});
+					SetBackgroundOnElement(element, pattern.toSVGTree());
+				}
+
+				// var doit;
+				// window.addEventListener('resize', function(){
+				// 	clearTimeout(doit);
+				// 	doit = setTimeout(function() { GenBackground(); }, 100);
+				// });
+
+				GenPattern('prideBackgroundTarget', prideColors);
+				GenPattern('shortcordFlag', qbitColors, null, 200, 50, 0);
+				GenPattern('francesscoFlag', prideColors, null, 200, 50, 0);
 		</script>
 	</body>
 </html>

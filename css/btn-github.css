@@ -1,0 +1,19 @@
+/*
+ * Custom Github button for Bootstrap v4.4
+ */
+
+.btn-github,
+.btn-github:visited,
+.btn-github:link,
+.btn-github:active {
+	color: black;
+	background-color: rgba(236, 238, 239, 0.8);
+	border-color: #fff;
+	text-decoration: none;
+}
+
+.btn-github:hover {
+	color: #fff;
+	background-color: #4078c0;
+	border-color: #4078c0;
+}

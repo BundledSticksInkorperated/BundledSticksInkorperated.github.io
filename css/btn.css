@@ -1,0 +1,7 @@
+/*
+ * Overrides for Bootstrap v4.4 buttons
+ */
+
+.btn {
+	transition: background-color .5s, border-color .5s, color 1s;
+}

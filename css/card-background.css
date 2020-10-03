@@ -1,0 +1,13 @@
+/*
+ * Card background modifiers for Bootstrap v4.4
+ */
+
+.card-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Removed baked in radius for card images; .border-0 doesn't overwrite this */
+.card-background .card-img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

@@ -100,7 +100,7 @@
 		</div>
 			<script>
 				const prideColors = ["#F76852", "#EBB257", "#CFFC8B", "#87DFFF", "#BE8AFF"];
-				const qbitColors = ["#000000", "#9254F7", "#FFFFFF", "#F7E754"];
+				const transColors = ["#55CDFC", "#FFFFFF", "#F7A8B8"];
 
 				const SetBackgroundOnElement = function (element, svgTree)
 				{
@@ -121,14 +121,8 @@
 					SetBackgroundOnElement(element, pattern.toSVGTree());
 				}
 
-				// var doit;
-				// window.addEventListener('resize', function(){
-				// 	clearTimeout(doit);
-				// 	doit = setTimeout(function() { GenBackground(); }, 100);
-				// });
-
 				GenPattern('prideBackgroundTarget', prideColors);
-				GenPattern('shortcordFlag', qbitColors, null, 200, 50, 0);
+				GenPattern('shortcordFlag', transColors, null, 200, 50, 0);
 				GenPattern('francesscoFlag', prideColors, null, 200, 50, 0);
 		</script>
 	</body>
